@@ -1,0 +1,17 @@
+<table class="<%= table_css_classes %>">
+
+  <tr>
+    <th>Parameter</th>
+    <th>Value</th>
+  </tr>
+  <% @host.host_params_objects.each do |p| %>
+  <tr>
+    <td>
+      <%= p.name %>
+    </td>
+    <td>
+      <%= p.value %>
+    </td>
+  </tr>
+  <% end %>
+</table>
